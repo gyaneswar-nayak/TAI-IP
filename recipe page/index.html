@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">RecipeSite</div>
+        <ul>
+            <li><button onclick="location.href='#home'" class="nav-button">Home</button></li>
+                <li><button onclick="location.href='#recipes'" class="nav-button">Recipes</button></li>
+                <li><button onclick="location.href='#contact'" class="nav-button">Contact</button></li>
+              </ul>
+    </nav>
+
+    <section id="home" style="display: block;">
+        <h1>Welcome to RecipeSite</h1>
+        <p>Your one-stop destination for delicious recipes.</p>
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search recipes...">
+            <button onclick="searchRecipes()">Search</button>
+        </div>
+    </section>
+    
+    <main id="recipes" style="display: block;">
+        <div class="recipe-container">
+            <h2>Recipes</h2>
+            <div class="recipe-card">
+                <img src="Beef Tacos.jpg" alt="Beef Tacos">
+                <h3>Beef Tacos</h3>
+                <p class="menu-info">Delicious and easy to make.</p>
+                <div class="ingredients">Ingredients: Beef, Taco Shells, Lettuce, Cheese, Salsa</div>
+                <div class="most-popular">Most Popular</div>
+            </div>
+            <div class="recipe-card">
+                <img src="Caesar Salad.jpg" alt="Caesar Salad">
+                <h3>Caesar Salad</h3>
+                <p class="menu-info">Fresh and healthy.</p>
+                <div class="ingredients">Ingredients: Romaine Lettuce, Caesar Dressing, Croutons, Parmesan Cheese</div>
+            </div>
+            <div class="recipe-card">
+                <img src="Chicken Alfredo.jpg" alt="Chicken Alfredo">
+                <h3>Chicken Alfredo</h3>
+                <p class="menu-info">Creamy and delicious.</p>
+                <div class="ingredients">Ingredients: Chicken, Fettuccine, Alfredo Sauce, Parmesan Cheese</div>
+            </div>
+            <div class="recipe-card">
+                <img src="Chicken Curry.jpg" alt="Chicken Curry">
+                <h3>Chicken Curry</h3>
+                <p class="menu-info">Spicy and flavorful.</p>
+                <div class="ingredients">Ingredients: Chicken, Curry Powder, Coconut Milk, Onions, Garlic</div>
+            </div>
+            <div class="recipe-card">
+                <img src="Chocolate Cake.jpg" alt="Chocolate Cake">
+                <h3>Chocolate Cake</h3>
+                <p class="menu-info">Rich and decadent.</p>
+                <div class="ingredients">Ingredients: Flour, Cocoa Powder, Sugar, Eggs, Butter</div>
+            </div>
+            <div class="recipe-card">
+                <img src="Fruit Salad.jpg" alt="Fruit Salad">
+                <h3>Fruit Salad</h3>
+                <p class="menu-info">Fresh and sweet.</p>
+                <div class="ingredients">Ingredients: Mixed Fruits, Honey, Lemon Juice</div>
+            </div>
+            <div class="recipe-card">
+                <img src="Grilled Cheese Sandwich.jpg" alt="Grilled Cheese Sandwich">
+                <h3>Grilled Cheese</h3>
+                <p class="menu-info">Crispy and cheesy.</p>
+                <div class="ingredients">Ingredients: Bread, Cheese, Butter</div>
+            </div>
+            <div class="recipe-card">
+                <img src="Margherita Pizza.jpg" alt="Margherita Pizza">
+                <h3>Margherita Pizza</h3>
+                <p class="menu-info">Classic and delicious.</p>
+                <div class="ingredients">Ingredients: Pizza Dough, Tomato Sauce, Mozzarella Cheese, Basil</div>
+            </div>
+            <div class="recipe-card">
+                <img src="Spaghetti Carbonara.jpg" alt="Spaghetti Carbonara">
+                <h3>Spaghetti Carbonara</h3>
+                <p class="menu-info">Rich and creamy.</p>
+                <div class="ingredients">Ingredients: Spaghetti, Eggs, Parmesan Cheese, Pancetta, Black Pepper</div>
+            </div>
+            <div class="recipe-card">
+                <img src="Tomato Soup.jpg" alt="Tomato Soup">
+                <h3>Tomato Soup</h3>
+                <p class="menu-info">Warm and comforting.</p>
+                <div class="ingredients">Ingredients: Tomatoes, Onions, Garlic, Vegetable Broth, Cream</div>
+            </div>
+            <div class="recipe-card">
+                <img src="Vegetable Soup.jpg" alt="Vegetable Soup">
+                <h3>Vegetable Soup</h3>
+                <p class="menu-info">Healthy and hearty.</p>
+                <div class="ingredients">Ingredients: Mixed Vegetables, Vegetable Broth, Tomatoes, Herbs</div>
+            </div>
+            <div class="recipe-card">
+                <img src="Vegetable Stir Fry.jpg" alt="Vegetable Stir Fry">
+                <h3>Vegetable Stir Fry</h3>
+                <p class="menu-info">Quick and tasty.</p>
+                <div class="ingredients">Ingredients: Mixed Vegetables, Soy Sauce, Garlic, Ginger</div>
+            </div>
+        </div>
+    </main>
+
+    <section id="contact" style="display: none;">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <br>
+            <button type="submit">Send</button>
+        </form>
+        <div class="contact-info">
+            <p>Phone: 123-456-7890</p>
+            <p>Email: info@recipesite.com</p>
+            <p>Address: 123 Main St, Anytown, USA</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 RecipeSite. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
